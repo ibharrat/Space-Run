@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+#instructions {
+    position: absolute;
+    background-color: #932a12;
+    font-family: "Protest Strike";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 1000;
+    border: 5px solid black;
+    backdrop-filter: solid black;
+}
+
+#instructions p{
+    font-size: 3em;
+}
+
+#instructions button {
+    font-family: "Protest Strike";
+    font-size: 2em;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    background-color: #ff0000;
+    font-family: "Protest Strike";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 1000;
+    border: 5px solid black;
+    backdrop-filter: solid #000000;
+    text-align: center;
+}
+
+#gameOver p{
+    font-size: 4em;
+}
+
+#gameOver button {
+    font-family: "Protest Strike";
+    font-size: 2em;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000000;
+
+}
+
+

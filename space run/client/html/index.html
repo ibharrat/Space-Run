@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en' >
+    <head>
+        <title>Space Run</title>
+        <!--css-->
+        <link rel="stylesheet" href="/client/css/indexstyles.css">
+
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+        <!--server and js stuff-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/client/js/config.js"></script>
+        <script src='/client/js/index.js' async></script>
+    </head>
+
+    <body>
+        <div id="titleScreen">
+            
+        <!-- title / logo -->
+            <h1>Space Run</h1>
+            <h2>A Sidescroller Game</h2>
+    
+        <!-- sign up/login button-->
+            <button onclick="openPrompt()">Create Account or Log In</button>
+
+        <!-- controls button-->
+            <div id="controls">
+            <button onclick="openControls()">Controls</button>
+            </div>
+        </div>
+    
+        <!--sign up or login prompt-->
+        <div class="typePrompts">
+            <button onclick="openLogin()">Login</button>
+            <button onclick="openSignUp()">Sign Up</button>
+            <br><br>
+            <button onclick="exitPrompt()">Close</button>
+        </div>
+
+        <!--sign up prompt-->
+        <div class="typePrompts">
+            <p>Sign Up</p>
+            <br>
+            <input type="text" id="username" name="username" placeholder="username">
+            <br><br>
+            <input type="password" id="password" name="password" placeholder="password">
+            <br><br>
+            <button id="data-submit">Submit</button>
+            <button onclick="exitPrompt()">Close</button>
+        </div>
+
+        <!--login prompt-->
+        <div class="typePrompts">
+          <p>Login</p>
+          <br>
+          <input type="text" id="username1" name="username1" placeholder="username">
+          <br><br>
+          <input type="password" id="password1" name="password1" placeholder="password">
+          <br><br>
+          <button id="login-submit">Submit</button>
+          <button onclick="exitPrompt()">Close</button>
+        </div>
+
+        <!--control list-->
+        <div class="typePrompts">
+            <p>Press D to Shoot</p>
+            <br>
+            <p>Press F to Reload: Every 4 Shots</p>
+            <br>
+            <p>Press Space to Float Up</p>
+            <br>
+            <button onclick="exitPrompt()">Close</button>
+        </div>
+        
+    </body>
+</html>
